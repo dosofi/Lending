@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.header-container{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    /* background: linear-gradient(to top, black, white); */
+     /* __________Мне так больше понравилось)))________ */
+    background: radial-gradient(ellipse closest-side, white 15%, black 85%);
+}
+.bissnes, .hreff, .text1{
+    padding: 15px;
+    margin: 15px;
+    color: white;
+}
+.text1{
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 250px;
+    text-align: start;
+}
+.p1{
+    font-weight: bold;
+    font-size: large;
+}
+.p2{
+    font-size: small;
+}
+.b-1{
+    border: 1px solid black;
+    padding: 3px;
+    margin: 2px;
+    background: gray;
+}
+.b-1:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+}
+a:hover{
+    border-bottom: 1px solid white;
+}
+.hreff{
+    position: absolute;
+    left: 620px;
+}
+.bissnes{
+    position: absolute;
+    left: 180px;
+}
+/* ______________________________________HEADER__________________________ */
+.promotion-container{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, gray, white);
+}
+.nout{
+    position: absolute;
+    height: 200px;
+    width: 350px;
+    left: 615px;
+    top: -65px;
+}
+.text2{
+    position: absolute;
+    top: 12px;
+    left: 341px;
+    height: 100px;
+    width: 250px;
+    text-align: start;
+}
+.greySquer{
+    position: absolute;
+    background-color: gray;
+    height: 171px;
+    width: 253px;
+    left: 664px;
+    top: -50px;
+}
+/* ________________________________promotion__________________________ */
+.feater-container {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, gray, white);
+}
+.text3{
+    margin: 5px;
+}
+.icons{
+    display: flex;
+}
+.icons1{
+    border: 1px solid gray;
+    /* border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray; */
+    margin: 5px;
+    height: 120px;
+    width: 125px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    /* если закометировать тень и border получиться как в оригинале но мне кажется так красивее */
+}
+.learn{
+    background: linear-gradient(0deg, gray, white);
+    margin: 2px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.learn:hover{
+    cursor: pointer;
+}
+/* _________________________________FEATER___________________________________ */
+.coments-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, gray, white, rgb(151, 151, 240) 99%);
+}
+.comentsText{
+    display: flex;
+    margin: 10px;
+}
+.round{
+    display: flex;
+}
+.round1{
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    background-color: gray;
+    margin: 20px;
+    border-radius: 50%;
+}
+.icons2{
+    border: 1px solid gray;
+    margin: 5px;
+    height: 100px;
+    width: 155px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.icons22{
+    display: flex;
+}
+.p22{
+    margin-top: 30px;
+    margin-left: -15px;
+}
+.icons2::before, .icons2::after{
+    content: ''; 
+    position: absolute;
+    left: 20px; bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid whitesmoke
+}
+.icons2::after {
+    border-top: 10px solid rgb(240, 238, 234);
+    bottom: -19px; 
+   }
+   input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked), 
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label, 
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #6245e1;
+    border-bottom: 4px solid #5c45e1;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    left: 5px;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #563edd;
+}
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+input[type="checkbox"]:checked + label:after, 
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+/* ______________________COMENTS_____________________________ */
+.blue-container {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(151, 151, 240), black 99%);
+}
+.blue{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.try{
+    margin: 10px;
+}
+.try:hover{
+    cursor: pointer;
+}
+.form_radio{
+    display: flex;
+    margin: 15px;
+}
+/* ______________________FOOTER____________________ */
+
+.footer-container{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+ul, ol{
+    margin: 10px;
+}
+ol:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+.footerButton{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px;
+
+}
+.textFooter{
+    color: white;
+    width: 150px;
+    margin: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+.inputFooter{
+    display: flex;
+}
+.b1{
+    margin-left: 2px;
+}
